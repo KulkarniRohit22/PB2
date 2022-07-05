@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function f1() {
+ var Name =document.getElementById("t1").value;
+            var Age =document.getElementById("t2").value;
+            var mainlst1=document.getElementById("itemlist");
+            var mainlst2=document.getElementById("age");
+            
+
+            var myli1=document.createElement("li");
+            var myli2=document.createElement("li");
+
+
+            myli1.appendChild(txtnode1);
+            myli2.appendChild(txtnode2);
+
+            
+            var txtnode1=document.createTextNode(Name);
+            var txtnode2=document.createTextNode(Age);
+            
+
+            
+
+            mainlst1.appendChild(myli1);
+            mainlst2.appendChild(myli2);
+}
+
+</script>
+
+</head>
+<body>
+
+<p>Click the buttons to create and delete row(s) for the table.</p>
+
+Name:<input type="text" id="nm" ><br>
+Age:<input type="number" id="age"><br>
+<button onclick="f1()">Add Row</button>
+<table id="t1" border=1>
+  <tr>
+    <td>Name</td>
+    <td>Age</td>
+  </tr>
+  <tr>
+    <td>Aadarsh</td>
+    <td>21</td>
+  </tr>
+  
+</table>
+<br>
+
+
+
+
+
+</body>
+</html>

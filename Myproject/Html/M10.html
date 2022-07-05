@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+
+		function krishnamurthy(num,f1)
+		{
+
+            var num = prompt("Enter a number");
+            var sum = 0;
+            while(num>0)
+            {
+                var r = num % 10;
+                var f = f1(r);
+                
+                sum = sum + f;
+                num = num / 10;       
+            }
+         
+
+            if(num == sum)
+            {
+                console.log("The number is Krishnamurthi number!!");
+            }
+            else 
+            {
+                console.log("The number is not Krishnamurthi number!!");
+            }
+		}
+		krishnamurthy(145,factorial);
+		
+		function factorial(num)
+		{
+			var fact=0;
+			for(var i=0;i<=num; i++)
+			{
+				fact = fact * i;
+				return fact;
+			}
+
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

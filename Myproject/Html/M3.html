@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+		<script type="text/javascript">
+        
+         var s1=new String("nitin");
+         var s2=new String("nitin");
+         var s3="nitin";
+         var s4="nitin";
+         //== compares references of an object
+         alert(s1.valueOf()==s2.valueOf());
+         alert(s1.localeCompare(s2)==0);
+         //we use this two ways to compare a string when we have used the new keyword to create the two string as you can see in s1 and s2.but if the new keyword is not used then simply apply "==" to compare the 2 strings.
+ 
+
+
+
+
+
+
+
+//to check weather the string is palindrome or not.
+
+			var str = prompt("Enter a string");
+			var reverse="";
+
+
+			for(var i=str.length-1;i>=0;i--)
+			{
+				reverse = reverse + str[i];
+			}
+
+			//alert("@@@@" +reverse);
+			if(str==reverse)
+			{
+				alert("the string is palindrom");
+			}
+			else
+			{
+				alert("The string is not palindrom");
+			}
+
+		</script>
+</head>
+<body>
+
+</body>
+</html>>

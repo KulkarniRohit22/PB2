@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+
+		function f1()
+		{
+			var Name =document.getElementById("t1").value;
+		    var Age =document.getElementById("t2").value;
+			var mainlst1=document.getElementById("itemlist");
+			var mainlst2=document.getElementById("age");
+			
+
+			var myli1=document.createElement("li");
+			var myli2=document.createElement("li");
+
+
+			myli1.appendChild(txtnode1);
+			myli2.appendChild(txtnode2);
+
+			
+			var txtnode1=document.createTextNode(Name);
+			var txtnode2=document.createTextNode(Age);
+			
+
+			
+
+			mainlst1.appendChild(myli1);
+			mainlst2.appendChild(myli2);
+		}
+	</script>
+</head>
+<body>
+	<form>
+		Name:<input type="text" id="t1">
+		Age:<input type="number" id="t2">
+		<input type="button" value="Add To List" onclick="f1()">
+	</form>
+	<ul id="itemlist">
+		<li>Vaibhav</li>
+		
+	</ul>
+	<ul id="age">
+		<li>23</li>
+	</ul>
+
+</body>
+</html>
+
+
+
+<!-- Dom(Document Object Model) is a platform which allows programs or scripts to dynamically access and update the content and style of the document. -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function f1()
+		{
+           var Name=document.getElementById("Name").value;
+           
+           var Txtname=document.createTextName(Name);
+          
+		}
+	</script>
+</head>
+<body>
+	Name:<input type="text" id="Name"><br>
+	Age:<input type="number" id="Age"><br>
+	<input type="button" name="Add" value="Add To Table" onclick="f1()">
+
+</body>
+</html> -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+
+		function f1()
+		{
+			var food =document.getElementById("t1").value;
+			var mainlst=document.getElementById("itemlist");
+
+			var myli=document.createElement("li");
+			var txtnode=document.createTextNode(food);
+			myli.appendChild(txtnode);
+
+			
+
+			mainlst.appendChild(myli);
+		}
+	</script>
+</head>
+<body>
+	<form>
+		food Item of your choice:<input type="text" id="t1">
+		<input type="button" value="Add To List" onclick="f1()">
+	</form>
+	<ul id="itemlist">
+		<li>Pav Bhaji</li>
+	</ul>
+
+</body>
+</html> -->

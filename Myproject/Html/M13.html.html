@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		var arr=[10,20,30];
+		/*let a,b,c;
+		a=arr[0];
+		b=arr[1];
+		c=arr[2];*/
+
+
+
+		/*let [x,y,z] =arr;*/
+
+		let [x,y,z]=[10,20,30];
+		console.log(`x=${x} y=${y} z=${z}`);
+
+//normal swapping
+	/*let a=10, b=20;
+	var t=a;
+	a=b;
+	b=t;*/
+
+// swapping using array destructuring.
+	let a=10,b=20;
+	[a,b] = [b,a];
+
+	function calculator(a,b)
+	{
+		console.log("in calculator");
+		return [a+b,a*b,a-b];
+	}
+
+	var [sum,prod,sub] = calculator(4,6);
+	console.log("sum="+sum,"Product=" +prod,"Substrction="+sub);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

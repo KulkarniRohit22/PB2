@@ -1,0 +1,21 @@
+.s1{
+       border:yellow 2px dashed;
+       background-color:cyan;
+       color:red;
+       text-align:center;
+       margin:90px;
+       padding-top:20px; 
+
+.pos{position:fixed;
+     top:30px;}
+}
+.s2{
+       border:yellow 2px dashed;
+       background-color:cyan;
+       color:red;
+       text-align:center;
+       height:100px;
+       width:200px; }
+
+ul{backgound-color:olive;}
+li{display:inline}

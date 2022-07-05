@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+
+		//JS array can store mixed data
+		//you can add elements dynamically in an array
+      var a =[1,2,3,4,5,"Rohit",9.4,true];
+      /*console.log(a);*/
+      a.push(100);
+   /*   console.log(a);*/
+      var d = a.pop();
+      console.log(a);
+
+
+      for(var i=0;i<a.length;i++)
+      	console.log("hi" +a[i]);
+
+
+
+      //FUNCTION
+
+      function add(a,b) //this is function declaration
+      {
+      	alert("sum=" +(a+b));
+      }
+
+      add(10,20); // this is function calling.
+
+
+      function factorial(n)
+      {
+      	var fact=1;
+      	for(var i=1;i<=n;i++)
+      	{
+      		fact = fact * i;
+      	}
+      	return fact;
+      }
+
+      var ans = factorial(6);
+      alert("Factorial="+ans);
+
+
+    </script>
+	
+<body>
+
+</body>
+</html>>

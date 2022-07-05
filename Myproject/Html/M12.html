@@ -1,0 +1,43 @@
+<!-- Bubbling and Captchering -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<div id="div1">
+	<h4 id="myh1">Online Tutorials
+	<p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+  </p>
+ </h4>
+</div>
+<script type="text/javascript">
+	function greet()
+	{
+       alert("div says Good Morning");
+	}
+
+	var div1=document.getElementById("div1");
+	var h1=document.getElementById("myh1");
+	var p1=document.getElementById("p1");
+
+	div1.addEventListener('click',greet,false);
+    h1.addEventListener('click',()=>alert("h1 says Good Afternoon"),false);  //if it returns a false value then Bubbling happens.Bubbling means it shows the                                                                      output from innermost to outermost. i.e if you click on paragraph
+    p1.addEventListener('click',()=>alert("p1 says Byyeee"),false);
+
+   /* div.addEventListener('click',greet,true);
+    div.addEventListener('click',()=>alert("h1 says Good Afternoon"),true); //And if it returns a true value then captchering happens.Captchering means
+                                                                               it shows output from outermost to innermost
+    div.addEventListener('click',()=>alert("p1 says Byyeee"),true);*/
+
+</script>>
+
+</body>
+</html>>

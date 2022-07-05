@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		/*var ob={"ename"="Dheeraj",
+		        "qualifi"="BE",
+		        "display"=function()
+		                  {
+		                  	alert("Name: "+this.ename+" Qualification "+this.qualifi);
+		                  }
+	           };
+	     var ob2={"ename"="Rohit",
+		        "qualifi"="Mcom",
+		        "display"=function()
+		                  {
+		                  	alert("Name: "+this.ename+" Qualification "+this.qualifi);
+		                  }
+	           };
+	           console.log(ob.ename);
+	           ob.display();*/
+
+
+	     function Student(id,nm,per)
+	     {
+	     	console.log(this); 
+		this.sid=id;
+        this.name=nm;
+        this.percentage=per;
+        this.print=function()
+                   {
+                   	alert("Welcome"+this.name+ "your percenatage is "+this.percentage);
+                   }
+	     };
+	     var s1=new Student(1,"Omkar",90);
+	     console.log(s1);
+	     s1.print();
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

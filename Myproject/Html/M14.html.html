@@ -1,0 +1,45 @@
+<!-- Rest Parameter -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+        //if you want to use the rest parameter write "...n(where n is a name of a parameter)"
+		//the rest parameter is capable of storing multiple values.So if you want to store
+		//multiple values in single parameter you can use the rest parameter.
+
+		function m1(a,b,...n)//and if you want to use other parameters make sure that you are using the rest parameter at the end of all the parameter.In 
+		                     //this case the values 1 and 2 will be assigned to "a" and "b" and the rest of the values are assigned to n (i.e rest parameter). 
+		{
+			console.log(n);
+			for(var i=0;i<n.length;i++)
+			{
+				console.log(n[i]);
+			}
+			console.log("*******************************");
+			for(let data of n)
+			{
+				console.log(data);
+			}
+		}
+
+		m1(1,2,3,4,5,6,7);
+
+
+		var arr=[1,2,3,4,5];
+		function m2(a,b,c,d,e)
+		{
+			console.log(`a=${a} b=${b} c=${c} d=${d} e=${e}`);
+		}
+
+		var arr=[12,"om,8.99,90"];
+		m2(...arr);
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>>

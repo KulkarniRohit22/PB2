@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function iseven(){
+			return 	n%2==0;
+		}
+
+		function m1(sum,ele)
+		{
+			console.log(`element:${ele} sum=${sum}`);
+			sum = sum +ele;
+			return sum;
+		}
+
+
+
+
+		var arr =[12,28,66,35,77,2];
+	   // var a=ar.filter(iseven);
+	  // console.log(a);
+	  //filtering
+	   var b=arr.filter((n)=>n%3==0); //filter needs a callback function.
+	   console.log(b);
+
+	   //apply given callback function to every element.
+	   var c=arr.map((element)=>element+2);
+       console.log(c);
+
+       //reduce takes a callback function and reduces it to a single value
+       var sum =arr.reduce(m1,0);
+       //var sum =arr.reduce((sum,d)=>sum=sum+d);
+
+       var nm=["Ketaki","Sonam","Ashok","Aditya"];
+       nm.sort();
+       console.log(nm);
+       //custom callback function in sort where2 values are compare accordingly +1 or-1.
+       arr.sort((n1,n2)=>n1<n2?-1:+1);
+       console.log(arr);
+
+	</script>
+</head>
+<body>
+
+
+
+
+</body>
+</html>>

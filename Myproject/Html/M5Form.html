@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+      function Validate()
+      {
+      	var data="";
+      	data=data+ document.getElementById("fname").value;
+      	data+=document.getElementById("addr").value;
+      	data+=document.getElementById("mb").value;
+
+      	var arrgender=document.getElementByName("r1");
+      	for(var i=0; i<arrgender.length;i++)
+      	{
+      		if(arrgender[i].checked)
+      			data=data+arrgender[i].value;
+      	}
+      	var arrtech=document.getElementsByName("ck1");
+            for(var i=0;i<arrtech.length;i++)
+            {
+             if(arrtech[i].checked)
+             data=data+arrtech[i].value;
+            }
+
+            var cityindex =document.getElementById("s1").selectedIndex;
+            var city=document.getElementsById("s1").options[cityindex].value;
+
+            alert(city);
+            console.log(data);
+      }
+
+	</script>
+</head>
+<body>
+<h2>Registration Form</h2>
+
+	<form method="get" action="servername">
+		Name:<input type="text" name="" id="fname">
+		<br>
+		Address:<input type="text" name="" id="addr">
+		<br>
+		Mobile:<input type="number" name="" id="mb">
+		<br>
+		Gender:<input type="radio" name="r1" value="male">Male
+		       <input type="radio" name="r1" value="female">Female
+		<br>
+ 		Technical Skills:<input type="checkbox" name="c">C
+ 				  <input type="checkbox" name="c#">C#
+ 				  <input type="checkbox" name="Java">Java
+ 				  <input type="checkbox" name="Python">Python
+        <br>
+        city:<select id="s1">
+        	<option value="pune">Pune</option>
+        	<option value="mumbai">Mumbai</option>
+        	<option value="nashik">Nashik</option>
+        	<option value="solapur">Solapur</option>
+        	
+        </select>
+        <input type="button" name="" value="Validate" onclick="Validate()">
+        <input type="submit" value="submit">
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		//hoisting --js engine declaration are moved to the top
+		//var x;-scope is global
+		const a=90;
+
+		function even()
+		{
+			var y=90;
+			//if we use var here 
+			/*for(var c=1;c<=10; c++) //here the scope of the var is gobalso even if we try to print tthe value of c outside the for loop it will let us 		                            print.so if you want keep the scop of the c variable we use "let".
+			{
+				console.log(c);
+			}
+			console.log("c=" +c)*/
+			for(let c=1;c<=10;c++)
+			{
+				console.log(c);
+
+			}
+			console.log("c=" +c);
+		}
+
+	even();
+	</script>
+</head>
+<body>
+
+</body>
+</html>
