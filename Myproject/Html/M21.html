@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+
+
+		//Object Destructuring.
+
+		let ob ={"sid":1,"name":"Aadarsh","city":"pune"}
+		let{sid,city}=ob;
+		console.log(sid);
+		console.log(city);
+		var arr=[1,2,3];
+		var[x,y,z]=arr;
+
+
+        //using OR Operator
+        
+		function Student(sid,name)
+		{
+			this.sid=sid;
+			this.name=name || "unknown";
+
+		}
+		console.log(8>41 || 9<90);
+		var s1 = new Student(1);
+		console.log(s1);
+		console.log(9.7 || "gm");
+	</script>
+</head>
+<body>
+
+</body>
+</html>

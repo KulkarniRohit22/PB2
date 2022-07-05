@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		var e1 ={"firstname: "="Rohit",
+		         "lastname: "="Kulkarni"
+	            };
+	    var trainer={"firstname:"="Deepa","lastname:"="shah"};
+          //common to display data of any object.
+	    function display()
+	    {
+	    	alert("Name: "+this.firstname+" "+ "Surname: "+this.lastname);
+	    }
+
+	    display.call(e1);
+	    display.call(trainer);
+
+
+
+     //call, apply,bind methods. the purpose of these three methods is that if there is function and you have to apply it to the differnt object you can use anyone of these function
+
+	    //Call Method
+	    function print(city,email,mob)
+	    {
+	    	alert("Name: "+this.firstname+" "+ "Surname: "+this.lastname);
+	    }
+	    print.call(trainer,"pune","rohit2212@gmail.com",56544531214);
+
+	    //APPLY Method.
+	    var arr=["Pune","aadarsh@gmail.com",4651321515;
+	    print.apply(e1,arr);
+	    //apply method is same as the call method it immediatly calls the print function.
+
+	    //BIND Method.
+
+	    var ff=print.bind(trainer);
+
+	    ff("Mumbai","asdfdas@gmai.com",454413215);
+
+	    //here bind method does not immediately call that trainer object via print function.instead we can store that result in another variable and then we can call that print method whenever we want to.
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+
+		
+
+		//synchronous(it waits for whole work to finish and then only it starts next work(next method))
+		//asynchronous(if a method is taking a longer time to doing some processing it wont wait till it completes,it will immedialtly start working with the next instruction.)
+
+		//SETTIMEOUT METHOD.(it is a asynchronous method.)
+
+
+			function m1()
+			{
+				console.lod("HIIIII time finished");
+			}
+
+			console.log("started");
+
+			setTimeout(m1,3000)
+			{
+				console.log("Hellllooo");
+			}
+
+			for(var i=0; i<10; i++)
+			{
+				console.log("Ennddddd");
+			}
+
+
+	//SETINTERVAL METHOD.(it is also a asynchronous method.)
+	
+	 var id=setInterval(()=>console.log(new Date()),2000);
+
+	 for(var i=0;i<10;i++)
+	 {
+	 	console.log(i);
+	 }		
+
+	 function stop()
+	 {
+	 	clearInterval(id);
+	 }
+	</script>
+</head>
+<body>
+	<form>
+		
+		<input type="button" value="clear" onclick="stop()">
+	</form>
+
+</body>
+</html>
+
+
+
+
+
+<script>
+
+	function m1()
+	{
+		console.log("Hiiiiiiiiiii timeout");
+	}
+	console.log("started");
+
+	setTimeout(m1,200)
+	{
+        console.log("Hellllllllllllllooooo");
+	}
+
+	for(var i=0;i<10;i++)
+	{
+		console.log(i);
+	}
+	</script>
